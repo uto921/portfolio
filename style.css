@@ -35,7 +35,7 @@ ul {
 }
 
 li {
-    margin-bottom: 12px;
+    margin-bottom: 50px;
 }
 
 .about-content {
@@ -43,7 +43,7 @@ li {
     gap: 100px;
     margin-top: 100px;
     margin-left: auto;
-    width: 90%;
+    width: 80%;
 }
 
 .about-photo {
@@ -51,7 +51,6 @@ li {
 }
 
 .subtitle {
-
     width: 80%;
     margin-left: auto;
     margin-top: 100px;
@@ -78,7 +77,6 @@ section {
 }
 
 .contact-content {
-
     margin-top: 100px;
     width: 75%;
     margin-left: auto;
