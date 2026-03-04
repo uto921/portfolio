@@ -11,10 +11,11 @@
 
 <body id="top">
     <header>
+        <button id="menu-btn">☰</button>
         <h1><a href="#top">Ryoto&nbsp;Tajima<br>portfolio</br></a></h1>
     </header>
 
-    <nav>
+    <nav id="mainNav" class="oen">
         <ul>
             <li><a href="#about">about</a></li>
 
@@ -24,7 +25,7 @@
         </ul>
     </nav>
 
-    <img src="20260201150151.png" class="top-photo" alt="top-photo">
+    <img src="20260201150151.png" class="top-photo" alt="トップ画像">
 
     <main>
         <section id="about">
@@ -33,7 +34,7 @@
                 <p>わたしについて</p>
             </div>
             <div class="about-content">
-                <img src="S__32309298_0 編集.jpg" class="about-photo" alt="about-photo">
+                <img src="S__32309298_0 編集.jpg" class="about-photo" alt="プロフィール画像">
                 <div class="about-text">
                     <p class="name">
                         <span class="last">田島</span>
@@ -75,6 +76,15 @@
             <p>&copy; 2026 Ryoto Tajima</p>
         </footer>
     </main>
+
+    <script>const button = document.getElementById("menu-btn");
+        const nav = document.getElementById("mainNav");
+
+        button.addEventListener("click", function () {
+            nav.classList.toggle("open");
+        });</script>
+
+
 </body>
 
 </html>

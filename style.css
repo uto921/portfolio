@@ -8,10 +8,13 @@ body {
 }
 
 .top-photo {
-    width: 1900px;
-    height: 1500px;
+    width: 100%;
+    height: auto;
 }
 
+#menu-btn {
+    display: none;
+}
 
 h1 {
     position: fixed;
@@ -96,4 +99,76 @@ a {
 
 a:hover {
     opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
+    #menu-btn {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 5%;
+        z-index: 20;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        top: 10px;
+        left: 5%;
+        font-size: 1.2em;
+    }
+
+    nav {
+        position: fixed;
+        right: -250px;
+        width: 250px;
+        left: auto;
+        background: white;
+        height: 100vh;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav.open {
+        right: 0
+    }
+
+    li {
+        margin-bottom: 50px;
+    }
+
+    section {
+        padding: 50px 20px
+    }
+
+    .subtitle {
+        text-align: center;
+        margin: 50px auto 0;
+    }
+
+    .about-content {
+        align-items: center;
+    }
+
+    .top-photo {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+    }
 }
